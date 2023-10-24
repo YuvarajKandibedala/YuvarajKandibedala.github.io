@@ -3,685 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Information Form</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <style>
-        .container {
-            display: flex;
-            flex-direction: row;
-            /* height: 90vh; */
-            border-radius: 15px;
-            background-color: #f2f2f2; /* Background color for the left panel */
-        }
-
-        .form-container {
-            flex: 1;
-            padding: 20px;
-            background-color: #007BFF;
-            border-radius: 15px 0px 0px 15px;
-        }
-
-        .form-section {
-            display: none;
-            background-color: white; /* Background color for the form sections */
-            padding: 20px;
-            margin: 10px;
-            border-radius: 10px;
-        }
-
-        .form-section h2 {
-            margin-bottom: 20px;
-            text-align: center;
-            background-color: rgb(149, 197, 255);
-            padding: 10px;
-            border-radius: 10px;
-        }
-
-        .form-section.active {
-            display: block;
-        }
-
-        .btn {
-            margin: 10px 0;
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: white;
-            border: 1px solid white;
-            border-radius: 10px;
-            cursor: pointer;
-            width: 100%;
-            font-weight: bold;
-        }
-
-        .btn:hover {
-            background-color: white;
-            color: #007BFF;
-        }
-
-        .info-container {
-            flex: 3;
-            padding: 20px;
-        }
-    </style>
+    <title>Your Page Title</title>
+    <!-- Add any additional meta tags, stylesheets, or scripts here -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <!-- boostrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </head>
 <body>
-    <br>
-    <a href="index.html" class="btn btn-primary">Go Back</a>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <div class="nav-logo">
+            <a href="index.html" class="nav-logo__link" title="logo"><img src="img/logo.png" alt="" srcset=""></a>
+            <!-- make logo size fit well -->
+            <style>
+              .nav-logo__link img {
+                height: 100px;
+                width: 300px;
+              }
 
-    <style>
-        .btn-primary {
-            background-color: #09a9e8;
-            border: 2px solid #ffffff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            color: #fff;
-            font-size: 16px;
-            font-weight: 600;
-            width: 20%;
-            margin-left: 7%;
+              .btp-pip {
+                background-color: #09a9e8;
+                border: 2px solid #ffffff;
+                padding: 15px 20px;
+                border-radius: 5px;
+                color: #fff;
+                font-size: 17px;
+                font-weight: 600;
+              }
+            </style>
+          </div>
+          <div class="nav-menu">
+            <ul class="nav-menu__item">
+              <li><a href="#" class="nav-menu__link">Home</a></li>
+              <li><a href="#" class="nav-menu__link">About</a></li>
+              <li><a href="#" class="nav-menu__link">Service</a></li>
+              <li><a href="#" class="nav-menu__link">Contact</a></li>
+
+              <!-- add a sign in button with a custom bg -->
+              <li><a href="login/login.html" class="nav-menu__link btn btn-primary signin">Sign&nbsp;In</a></li>
+            </ul>
+          </div>
+        </nav>
+        <hr>
+        <div class="hero">
+          <div class="hero-text">
+            <h4>LexArtium: Empowering Brilliance, Showcasing Potential</h4>
+
+            <p class="hero-text__subs">At LexArtium, we empower you to transform your academic journey into a captivating narrative of excellence. Discover the means to showcase your talents, connect with a global community, and open doors to exciting opportunities. Your academic brilliance deserves a canvas – your LexArtium portfolio. Explore more and unlock your limitless potential.</p>
+
+            <a class="btn btn-primary btp-pip" href="login/login.html">Create a Free Account</a>
+          </div>
+          <div class="hero-image">
+            <img class="hero-image__main" src="https://bit.ly/2pzDwgc" alt="Images">
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Main -->
+    <main class="main">
+      <section class="about">
+        <div class="container">
+          <div class="about-image">
+            <img class="about-image__main" src="https://bit.ly/2D7MxjT" alt="Images">
+          </div>
+          <div class="about-text">
+            <h1 class="about-text__main">Key Feature</h1>
+            <p class="about-text__subs"><ul>
+              <li>Create a stunning online portfolio effortlessly.</li>
+              <li>Showcase your projects, research, and accomplishments.</li>
+              <li>Connect with a global community of like-minded learners.</li>
+              <li>Get discovered by universities and potential employers.</li>
+          </ul></p> <br>
+          <section class="get-started">
+            <h2 class="about-text__main">Get Started Today</h2>
+            <p>Don't miss out on the opportunity to share your brilliance with the world. Join LexArtium and embark on a journey of academic discovery and creativity.</p>
+        </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- other services button -->
+      <center><div class="otherservices"><h4>Other Services</h4></div></center>
+      <!-- style -->
+      <style>
+        .otherservices {
+          text-align: center;
+          margin-top: 30px;
+          margin-bottom: -30px;
+          background-color: #09a9e8;
+          border: 2px solid #ffffff;
+          padding: 15px 20px;
+          border-radius: 5px;
+          color: #fff;
+          width: 50%;
         }
-        .btn-primary:hover {
-            background-color: #fff;
-            color: #09a9e8;
-            border: 2px solid #09a9e8;
-        }
-    </style>
-    <div class="container">
-        <div class="form-container">
-            <button class="btn" id="personalDetailsBtn">Personal&nbsp;Details</button>
-            <button class="btn" id="educationBtn">Education</button>
-            <button class="btn" id="projectsBtn">Projects</button>
-            <button class="btn" id="certificationsBtn">Certifications</button>
-            <button class="btn" id="skillsBtn">Skills</button>
-            <button class="btn" id="experienceBtn">Experience</button>
-            <button class="btn" id="othersBtn">Others</button>
+      </style>
+      <section class="service">
+        <div class="container">
+            <div class="card card-1 service-card">
+                <div class="card-image">
+                    <img src="https://bit.ly/37hmX9N" alt="Service Image 1">
+                </div>
+                <div class="card-text">
+                    <h2 class="card-text__title">Web Development</h2>
+                    <p class="card-text__subs">Craft stunning websites and applications that leave a lasting impression. Explore the world of coding and design.</p>
+                    <a class="card-text__btn btn btn-primary" href="#">Learn More</a>
+                </div>
+            </div>
+            <div class="card card-2 service-card">
+                <div class="card-image">
+                    <img src="https://bit.ly/2Xx6MAH" alt="Service Image 2">
+                </div>
+                <div class="card-text">
+                    <h2 class="card-text__title">Digital Marketing</h2>
+                    <p class="card-text__subs">Harness the power of online marketing strategies to boost your online presence and reach your target audience.</p>
+                    <a class="card-text__btn btn btn-primary" href="#">Learn More</a>
+                </div>
+            </div>
+            <div class="card card-3 service-card">
+                <div class="card-image">
+                    <img src="https://bit.ly/2O0Ftf9" alt="Service Image 3">
+                </div>
+                <div class="card-text">
+                    <h2 class="card-text__title">Graphic Design</h2>
+                    <p class="card-text__subs">Bring your creative ideas to life through captivating visual designs. Let your imagination flow through images and art.</p>
+                    <a class="card-text__btn btn btn-primary" href="#">Learn More</a>
+                </div>
+            </div>
         </div>
-
-        <div class="info-container">
-                    <!-- Your personal details form goes here -->
-        <div class="form-section" id="personalDetails">
-            <h2>Personal Details</h2>
-            <form>
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label for="fullName" class="form-label">Full Name</label>
-                        <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Full Name">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="example@example.com">
-                    </div>
-                </div>
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label for="phone" class="form-label">Phone Number</label>
-                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="123-456-7890">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="address" class="form-label">Address</label>
-                        <input type="text" class="form-control" id="address" name="address">
-                    </div>
-                </div>
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label for="city" class="form-label">City</label>
-                        <input type="text" class="form-control" id="city" name="city">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="country" class="form-label">Country</label>
-                        <input type="text" class="form-control" id="country" name="country">
-                    </div>
-                </div>
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label for="pinCode" class="form-label">Pin Code</label>
-                        <input type="text" class="form-control" id="pinCode" name="pinCode">
-                    </div>
-                </div>
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label for="linkedin" class="form-label">LinkedIn Url</label>
-                        <input type="url" class="form-control" id="linkedin" name="linkedin">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="github" class="form-label">Github Url</label>
-                        <input type="url" class="form-control" id="github" name="github">
-                    </div>
-                </div>
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label for="twitter" class="form-label">Twitter Url</label>
-                        <input type="url" class="form-control" id="twitter" name="twitter">
-                    </div>
-                </div>
-                <!-- <button type="submit" class="btn btn-primary">Next</button> -->
+    </section>    
+    
+      <section class="contact">
+        <div class="container">
+          <div class="contact-image">
+            <img src="https://bit.ly/32Y3o34" alt="Images">
+          </div>
+          <div class="contact-form">
+            <h2 class="contact-title">Contact Us Now.</h2>
+            <form class="form">
+              <div class="form-group group-1">
+                <input type="text" name="name" class="form-input" placeholder="Input Your Name">
+              </div>
+              <div class="form-group group-2">
+                <input type="text" name="email" class="form-input" placeholder="Input Your Email">
+              </div>
+              <div class="form-group group-3">
+                <textarea name="message" rows="5" class="form-textarea" placeholder="Input Your Messages"></textarea>
+              </div>
+              <div class="form-group group-4">
+                <input type="submit" class="form-submit btn btn-primary" value="Submit">
+              </div>
             </form>
+          </div>
         </div>
-
-
-        <!-- Your education form goes here -->
-        <div class="form-section" id="education">
-            <h2>Education</h2>
-            <form>
-                <h4>Class X/SSC</h4>
-                <div class="mb-3">
-                    <label for="xSchoolName" class="form-label">School Name</label>
-                    <input type="text" class="form-control" id="xSchoolName" name="xSchoolName">
-                </div>
-                <div class="mb-3">
-                    <label for="xSchoolLocation" class="form-label">School Location</label>
-                    <input type="text" class="form-control" id="xSchoolLocation" name="xSchoolLocation">
-                </div>
-                <div class="mb-3">
-                    <label for="xBoardName" class="form-label">Board Name</label>
-                    <input type="text" class="form-control" id="xBoardName" name="xBoardName">
-                </div>
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label for="xPassedYear" class="form-label">Passed out Year</label>
-                        <input type="month" class="form-control" id="xPassedYear" name="xPassedYear">
-
-                    </div>
-                    <div class="col-md-6">
-                        <label for="xPercentage" class="form-label">Percentage of Marks Obtained</label>
-                        <input type="text" class="form-control" id="xPercentage" name="xPercentage">
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="xCourseDetails" class="form-label">Course Details</label>
-                    <textarea class="form-control" id="xCourseDetails" name="xCourseDetails"></textarea>
-                </div>
-    
-                <h4>Class XII/Intermediate/Polytechnic</h4>
-                <div class="mb-3">
-                    <label for="xiiSchoolName" class="form-label">School Name</label>
-                    <input type="text" class="form-control" id="xiiSchoolName" name="xiiSchoolName">
-                </div>
-                <div class="mb-3">
-                    <label for="xiiSchoolLocation" class="form-label">School Location</label>
-                    <input type="text" class="form-control" id="xiiSchoolLocation" name="xiiSchoolLocation">
-                </div>
-                <div class="mb-3">
-                    <label for="xiiBoardName" class="form-label">Board Name</label>
-                    <input type="text" class="form-control" id="xiiBoardName" name="xiiBoardName">
-                </div>
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label for="xiiPassedYear" class="form-label">Passed out Year</label>
-                        <input type="month" class="form-control" id="xiiPassedYear" name="xiiPassedYear">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="xiiPercentage" class="form-label">Percentage of Marks Obtained</label>
-                        <input type="text" class="form-control" id="xiiPercentage" name="xiiPercentage">
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="xiiCourseDetails" class="form-label">Course Details</label>
-                    <textarea class="form-control" id="xiiCourseDetails" name="xiiCourseDetails"></textarea>
-                </div>
-    
-                <h2>UG</h2>
-                <div class="mb-3">
-                    <label for="ugCourse" class="form-label">Course</label>
-                    <input type="text" class="form-control" id="ugCourse" name="ugCourse">
-                </div>
-                <div class="mb-3">
-                    <label for="ugBranch" class="form-label">Branch/Department</label>
-                    <input type="text" class="form-control" id="ugBranch" name="ugBranch">
-                </div>
-                <div class="mb-3">
-                    <label for="ugPercentage" class="form-label">Percentage of Marks Obtained/GPA</label>
-                    <input type="text" class="form-control" id="ugPercentage" name="ugPercentage">
-                </div>
-                <div class="mb-3">
-                    <label for="ugCourseDetails" class="form-label">Course Details</label>
-                    <textarea class="form-control" id="ugCourseDetails" name="ugCourseDetails"></textarea>
-                </div>
-                
-                <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-            </form>
-        </div>  
-
-        <!-- Your projects form goes here -->
-        <div class="form-section" id="projects">
-            <h2>Projects</h2>
-            <form>
-                <h4>Project 1</h4>
-                <div class="mb-3">
-                    <label for="project1Title" class="form-label">Title</label>
-                    <input type="text" class="form-control" id="project1Title" name="project1Title">
-                </div>
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label for="project1FromDate" class="form-label">From Date</label>
-                        <input type="month" class="form-control" id="project1FromDate" name="project1FromDate">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="project1ToDate" class="form-label">To Date</label>
-                        <input type="month" class="form-control" id="project1ToDate" name="project1ToDate">
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="project1Role" class="form-label">Role</label>
-                    <select class="form-select" id="project1Role" name="project1Role">
-                        <option value="">Select Role</option>
-                        <option value="Project Coordinator">Project Coordinator</option>
-                        <option value="Project Leader">Project Leader</option>
-                        <option value="Team Manager">Team Manager</option>
-                        <option value="Task Manager">Task Manager</option>
-                        <option value="Lead Coordinator">Lead Coordinator</option>
-                        <option value="Group Supervisor">Group Supervisor</option>
-                        <option value="Task Leader">Task Leader</option>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <label for="project1Outcomes" class="form-label">Any Outcomes</label>
-                    <input type="text" class="form-control" id="project1Outcomes" name="project1Outcomes">
-                </div>
-                <div class="mb-3">
-                    <label for="project1Summary" class="form-label">Summary</label>
-                    <textarea class="form-control" id="project1Summary" name="project1Summary"></textarea>
-                </div>
-    
-                <h4>Project 2</h4>
-                <div class="mb-3">
-                    <label for="project2Title" class="form-label">Title</label>
-                    <input type="text" class="form-control" id="project2Title" name="project2Title">
-                </div>
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label for="project2FromDate" class="form-label">From Date</label>
-                        <input type="month" class="form-control" id="project2FromDate" name="project2FromDate">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="project2ToDate" class="form-label">To Date</label>
-                        <input type="month" class="form-control" id="project2ToDate" name="project2ToDate">
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="project2Role" class="form-label">Role</label>
-                    <select class="form-select" id="project2Role" name="project2Role">
-                        <option value="">Select Role</option>
-                        <option value="Project Coordinator">Project Coordinator</option>
-                        <option value="Project Leader">Project Leader</option>
-                        <option value="Team Manager">Team Manager</option>
-                        <option value="Task Manager">Task Manager</option>
-                        <option value="Lead Coordinator">Lead Coordinator</option>
-                        <option value="Group Supervisor">Group Supervisor</option>
-                        <option value="Task Leader">Task Leader</option>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <label for="project2Outcomes" class="form-label">Any Outcomes</label>
-                    <input type="text" class="form-control" id="project2Outcomes" name="project2Outcomes">
-                </div>
-                <div class="mb-3">
-                    <label for="project2Summary" class="form-label">Summary</label>
-                    <textarea class="form-control" id="project2Summary" name="project2Summary"></textarea>
-                </div>
-    
-                <h4>Project 3</h4>
-                <div class="mb-3">
-                    <label for="project3Title" class="form-label">Title</label>
-                    <input type="text" class="form-control" id="project3Title" name="project3Title">
-                </div>
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label for="project3FromDate" class="form-label">From Date</label>
-                        <input type="month" class="form-control" id="project3FromDate" name="project3FromDate">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="project3ToDate" class="form-label">To Date</label>
-                        <input type="month" class="form-control" id="project3ToDate" name="project3ToDate">
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="project3Role" class="form-label">Role</label>
-                    <select class="form-select" id="project3Role" name="project3Role">
-                        <option value="">Select Role</option>
-                        <option value="Project Coordinator">Project Coordinator</option>
-                        <option value="Project Leader">Project Leader</option>
-                        <option value="Team Manager">Team Manager</option>
-                        <option value="Task Manager">Task Manager</option>
-                        <option value="Lead Coordinator">Lead Coordinator</option>
-                        <option value="Group Supervisor">Group Supervisor</option>
-                        <option value="Task Leader">Task Leader</option>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <label for="project3Outcomes" class="form-label">Any Outcomes</label>
-                    <input type="text" class "form-control" id="project3Outcomes" name="project3Outcomes">
-                </div>
-                <div class="mb-3">
-                    <label for="project3Summary" class="form-label">Summary</label>
-                    <textarea class="form-control" id="project3Summary" name="project3Summary"></textarea>
-                </div>
-                
-                <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-            </form>
-        </div> 
-
-        <!-- Your certifications form goes here -->
-        <div class="form-section" id="certifications">
-            <h2>Certifications</h2>
-            <form>
-                <h4>Certification 1</h4>
-                <div class="mb-3">
-                    <label for="certification1Title" class="form-label">Title</label>
-                    <input type="text" class="form-control" id="certification1Title" name="certification1Title">
-                </div>
-                <div class="mb-3">
-                    <label for="certification1Issuer" class="form-label">Issuer</label>
-                    <input type="text" class="form-control" id="certification1Issuer" name="certification1Issuer">
-                </div>
-                <div class="mb-3">
-                    <label for="certification1Url" class="form-label">URL (If any)</label>
-                    <input type="url" class="form-control" id="certification1Url" name="certification1Url">
-                </div>
-                <div class="mb-3">
-                    <label for="certification1Upload" class="form-label">Upload Certificate</label>
-                    <input type="file" class="form-control" id="certification1Upload" name="certification1Upload">
-                </div>
-    
-                <h4>Certification 2</h4>
-                <div class="mb-3">
-                    <label for="certification2Title" class="form-label">Title</label>
-                    <input type="text" class="form-control" id="certification2Title" name="certification2Title">
-                </div>
-                <div class="mb-3">
-                    <label for="certification2Issuer" class="form-label">Issuer</label>
-                    <input type="text" class="form-control" id="certification2Issuer" name="certification2Issuer">
-                </div>
-                <div class="mb-3">
-                    <label for="certification2Url" class="form-label">URL (If any)</label>
-                    <input type="url" class="form-control" id="certification2Url" name="certification2Url">
-                </div>
-                <div class="mb-3">
-                    <label for="certification2Upload" class="form-label">Upload Certificate</label>
-                    <input type="file" class="form-control" id="certification2Upload" name="certification2Upload">
-                </div>
-    
-                <h4>Certification 3</h4>
-                <div class="mb-3">
-                    <label for="certification3Title" class="form-label">Title</label>
-                    <input type="text" class="form-control" id="certification3Title" name="certification3Title">
-                </div>
-                <div class="mb-3">
-                    <label for "certification3Issuer" class="form-label">Issuer</label>
-                    <input type="text" class="form-control" id="certification3Issuer" name="certification3Issuer">
-                </div>
-                <div class="mb-3">
-                    <label for="certification3Url" class="form-label">URL (If any)</label>
-                    <input type="url" class="form-control" id="certification3Url" name="certification3Url">
-                </div>
-                <div class="mb-3">
-                    <label for="certification3Upload" class="form-label">Upload Certificate</label>
-                    <input type="file" class="form-control" id="certification3Upload" name="certification3Upload">
-                </div>
-    
-                <h4>Certification 4</h4>
-                <div class="mb-3">
-                    <label for="certification4Title" class="form-label">Title</label>
-                    <input type="text" class="form-control" id="certification4Title" name="certification4Title">
-                </div>
-                <div class="mb-3">
-                    <label for="certification4Issuer" class="form-label">Issuer</label>
-                    <input type="text" class="form-control" id="certification4Issuer" name="certification4Issuer">
-                </div>
-                <div class="mb-3">
-                    <label for="certification4Url" class="form-label">URL (If any)</label>
-                    <input type="url" class="form-control" id="certification4Url" name="certification4Url">
-                </div>
-                <div class="mb-3">
-                    <label for="certification4Upload" class="form-label">Upload Certificate</label>
-                    <input type="file" class="form-control" id="certification4Upload" name="certification4Upload">
-                </div>
-    
-                <h4>Certification 5</h4>
-                <div class="mb-3">
-                    <label for="certification5Title" class="form-label">Title</label>
-                    <input type="text" class="form-control" id="certification5Title" name="certification5Title">
-                </div>
-                <div class="mb-3">
-                    <label for="certification5Issuer" class="form-label">Issuer</label>
-                    <input type="text" class="form-control" id="certification5Issuer" name="certification5Issuer">
-                </div>
-                <div class="mb-3">
-                    <label for="certification5Url" class="form-label">URL (If any)</label>
-                    <input type="url" class="form-control" id="certification5Url" name="certification5Url">
-                </div>
-                <div class="mb-3">
-                    <label for="certification5Upload" class="form-label">Upload Certificate</label>
-                    <input type="file" class="form-control" id="certification5Upload" name="certification5Upload">
-                </div>
-    
-                <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-            </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-menu">
+          <ul class="footer-menu__item">
+            <li><a href="#" class="footer-menu__link">Home</a></li>
+            <li><a href="#" class="footer-menu__link">About</a></li>
+            <li><a href="#" class="footer-menu__link">Service</a></li>
+            <li><a href="#" class="footer-menu__link">Contact</a></li>
+          </ul>
         </div>
-
-        <!-- Your skills form goes here -->
-        <div class="form-section" id="skills">
-            <h2>Skills</h2>
-            <form>
-                <h4>Skill 1</h4>
-                <div class="mb-3">
-                    <label for="skill1Name" class="form-label">Skill Name</label>
-                    <input type="text" class="form-control" id="skill1Name" name="skill1Name">
-                </div>
-                <div class="mb-3">
-                    <label for="skill1Level" class="form-label">Skill Level</label>
-                    <select class="form-select" id="skill1Level" name="skill1Level">
-                        <option value="">Select Skill Level</option>
-                        <option value="Beginner">Beginner</option>
-                        <option value="Intermediate">Intermediate</option>
-                        <option value="Advanced">Advanced</option>
-                        <option value="Expert">Expert</option>
-                    </select>
-                </div>
-    
-                <h4>Skill 2</h4>
-                <div class="mb-3">
-                    <label for="skill2Name" class="form-label">Skill Name</label>
-                    <input type="text" class="form-control" id="skill2Name" name="skill2Name">
-                </div>
-                <div class="mb-3">
-                    <label for="skill2Level" class="form-label">Skill Level</label>
-                    <select class="form-select" id="skill2Level" name="skill2Level">
-                        <option value="">Select Skill Level</option>
-                        <option value="Beginner">Beginner</option>
-                        <option value="Intermediate">Intermediate</option>
-                        <option value="Advanced">Advanced</option>
-                        <option value="Expert">Expert</option>
-                    </select>
-                </div>
-    
-                <h4>Skill 3</h4>
-                <div class="mb-3">
-                    <label for="skill3Name" class="form-label">Skill Name</label>
-                    <input type="text" class="form-control" id="skill3Name" name="skill3Name">
-                </div>
-                <div class="mb-3">
-                    <label for="skill3Level" class="form-label">Skill Level</label>
-                    <select class="form-select" id="skill3Level" name="skill3Level">
-                        <option value="">Select Skill Level</option>
-                        <option value="Beginner">Beginner</option>
-                        <option value="Intermediate">Intermediate</option>
-                        <option value="Advanced">Advanced</option>
-                        <option value="Expert">Expert</option>
-                    </select>
-                </div>
-    
-                <!-- You can repeat the above sections for additional skills -->
-    
-                <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-            </form>
-        </div>        
-
-        <!-- Your experience form goes here -->
-        <div class="form-section" id="experience">
-            <h2>Experience / Internship</h2>
-            <form>
-                <h4>Work Experience 1</h4>
-                <div class="mb-3">
-                    <label for="experience1Organization" class="form-label">Name of the Organization</label>
-                    <input type="text" class="form-control" id="experience1Organization" name="experience1Organization">
-                </div>
-                <div class="mb-3">
-                    <label for="experience1Location" class="form-label">Location</label>
-                    <input type="text" class="form-control" id="experience1Location" name="experience1Location">
-                </div>
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label for="experience1FromDate" class="form-label">From Date (Month)</label>
-                        <input type="month" class="form-control" id="experience1FromDate" name="experience1FromDate">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="experience1ToDate" class="form-label">To Date (Month)</label>
-                        <input type="month" class="form-control" id="experience1ToDate" name="experience1ToDate">
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="experience1Role" class="form-label">Role/Designation</label>
-                    <input type="text" class="form-control" id="experience1Role" name="experience1Role">
-                </div>
-                <div class="mb-3">
-                    <label for="experience1Responsibilities" class="form-label">Responsibilities Undertaken</label>
-                    <textarea class="form-control" id="experience1Responsibilities" name="experience1Responsibilities"></textarea>
-                </div>
-    
-                <h4>Work Experience 2</h4>
-                <div class="mb-3">
-                    <label for="experience1Organization" class="form-label">Name of the Organization</label>
-                    <input type="text" class="form-control" id="experience1Organization" name="experience1Organization">
-                </div>
-                <div class="mb-3">
-                    <label for="experience1Location" class="form-label">Location</label>
-                    <input type="text" class="form-control" id="experience1Location" name="experience1Location">
-                </div>
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label for="experience1FromDate" class="form-label">From Date (Month)</label>
-                        <input type="month" class="form-control" id="experience1FromDate" name="experience1FromDate">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="experience1ToDate" class="form-label">To Date (Month)</label>
-                        <input type="month" class="form-control" id="experience1ToDate" name="experience1ToDate">
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="experience1Role" class="form-label">Role/Designation</label>
-                    <input type="text" class="form-control" id="experience1Role" name="experience1Role">
-                </div>
-                <div class="mb-3">
-                    <label for="experience1Responsibilities" class="form-label">Responsibilities Undertaken</label>
-                    <textarea class="form-control" id="experience1Responsibilities" name="experience1Responsibilities"></textarea>
-                </div>
-
-                <h4>Work Experience 3</h4>
-                <div class="mb-3">
-                    <label for="experience1Organization" class="form-label">Name of the Organization</label>
-                    <input type="text" class="form-control" id="experience1Organization" name="experience1Organization">
-                </div>
-                <div class="mb-3">
-                    <label for="experience1Location" class="form-label">Location</label>
-                    <input type="text" class="form-control" id="experience1Location" name="experience1Location">
-                </div>
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label for="experience1FromDate" class="form-label">From Date (Month)</label>
-                        <input type="month" class="form-control" id="experience1FromDate" name="experience1FromDate">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="experience1ToDate" class="form-label">To Date (Month)</label>
-                        <input type="month" class="form-control" id="experience1ToDate" name="experience1ToDate">
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="experience1Role" class="form-label">Role/Designation</label>
-                    <input type="text" class="form-control" id="experience1Role" name="experience1Role">
-                </div>
-                <div class="mb-3">
-                    <label for="experience1Responsibilities" class="form-label">Responsibilities Undertaken</label>
-                    <textarea class="form-control" id="experience1Responsibilities" name="experience1Responsibilities"></textarea>
-                </div>
-                
-                <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-            </form>
-        </div> 
-
-        <!-- Your others form goes here -->
-        <div class="form-section" id="others">
-            <h2>Others</h2>
-            <form>
-                <div class="mb-3">
-                    <label for="achievements" class="form-label">Achievements/Awards/Extra-curricular Activities</label>
-                    <input type="text" class="form-control" id="achievements" name="achievements">
-                </div>
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label for="achievementDate" class="form-label">Date</label>
-                        <input type="date" class="form-control" id="achievementDate" name="achievementDate">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="achievementUrl" class="form-label">URL (If any)</label>
-                        <input type="url" class="form-control" id="achievementUrl" name="achievementUrl">
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="achievementUpload" class="form-label">Upload Document</label>
-                    <input type="file" class="form-control" id="achievementUpload" name="achievementUpload">
-                </div>
-    
-                <div class="mb-3">
-                    <label for="languagesKnown" class="form-label">Languages Known</label>
-                    <input type="text" class="form-control" id="languagesKnown" name="languagesKnown">
-                </div>
-                <div class="mb-3">
-                    <label for="languageRating" class="form-label">Rate Your Languages</label>
-                    <input type="text" class="form-control" id="languageRating" name="languageRating">
-                </div>
-    
-                <div class="mb-3">
-                    <label for="additionalInformation" class="form-label">Additional Information</label>
-                    <textarea class="form-control" id="additionalInformation" name="additionalInformation"></textarea>
-                </div>
-    
-                <div class="mb-3">
-                    <label for="strength" class="form-label">Strength</label>
-                    <textarea class="form-control" id="strength" name="strength"></textarea>
-                </div>
-    
-                <div class="mb-3">
-                    <label for="hobbies" class="form-label">Hobbies</label>
-                    <textarea class="form-control" id="hobbies" name="hobbies"></textarea>
-                </div>
-    
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </div> 
-    
-    </div>
-    <br><br>
-
-    <script>
-        const buttons = document.querySelectorAll(".btn");
-        const sections = document.querySelectorAll(".form-section");
-
-        buttons.forEach((button) => {
-            button.addEventListener("click", () => {
-                const sectionId = button.id.replace("Btn", "");
-                sections.forEach((section) => {
-                    section.classList.remove("active");
-                });
-                document.getElementById(sectionId).classList.add("active");
-            });
-        });
-
-        // By default, display the "Personal Details" section
-        document.getElementById("personalDetails").classList.add("active");
-    </script>
+        <div class="footer-copy">
+          <p>&copy; Copyright 2023 LexArtium - All Right Reserved</p>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
 </body>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </html>
