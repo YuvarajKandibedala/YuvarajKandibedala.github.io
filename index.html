@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <!-- Add any additional meta tags, stylesheets, or scripts here -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <!-- boostrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <div class="nav-logo">
+            <a href="index.html" class="nav-logo__link" title="logo"><img src="img/logo.png" alt="" srcset=""></a>
+            <!-- make logo size fit well -->
+            <style>
+              .nav-logo__link img {
+                height: 100px;
+                width: 300px;
+              }
+
+              .btp-pip {
+                background-color: #09a9e8;
+                border: 2px solid #ffffff;
+                padding: 15px 20px;
+                border-radius: 5px;
+                color: #fff;
+                font-size: 17px;
+                font-weight: 600;
+              }
+            </style>
+          </div>
+          <div class="nav-menu">
+            <ul class="nav-menu__item">
+              <li><a href="#" class="nav-menu__link">Home</a></li>
+              <li><a href="#" class="nav-menu__link">About</a></li>
+              <li><a href="#" class="nav-menu__link">Service</a></li>
+              <li><a href="#" class="nav-menu__link">Contact</a></li>
+
+              <!-- add a sign in button with a custom bg -->
+              <li><a href="login/login.html" class="nav-menu__link btn btn-primary signin">Sign&nbsp;In</a></li>
+            </ul>
+          </div>
+        </nav>
+        <hr>
+        <div class="hero">
+          <div class="hero-text">
+            <h4>LexArtium: Empowering Brilliance, Showcasing Potential</h4>
+
+            <p class="hero-text__subs">At LexArtium, we empower you to transform your academic journey into a captivating narrative of excellence. Discover the means to showcase your talents, connect with a global community, and open doors to exciting opportunities. Your academic brilliance deserves a canvas – your LexArtium portfolio. Explore more and unlock your limitless potential.</p>
+
+            <a class="btn btn-primary btp-pip" href="login/login.html">Create a Free Account</a>
+          </div>
+          <div class="hero-image">
+            <img class="hero-image__main" src="https://bit.ly/2pzDwgc" alt="Images">
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Main -->
+    <main class="main">
+      <section class="about">
+        <div class="container">
+          <div class="about-image">
+            <img class="about-image__main" src="https://bit.ly/2D7MxjT" alt="Images">
+          </div>
+          <div class="about-text">
+            <h1 class="about-text__main">Key Feature</h1>
+            <p class="about-text__subs"><ul>
+              <li>Create a stunning online portfolio effortlessly.</li>
+              <li>Showcase your projects, research, and accomplishments.</li>
+              <li>Connect with a global community of like-minded learners.</li>
+              <li>Get discovered by universities and potential employers.</li>
+          </ul></p> <br>
+          <section class="get-started">
+            <h2 class="about-text__main">Get Started Today</h2>
+            <p>Don't miss out on the opportunity to share your brilliance with the world. Join LexArtium and embark on a journey of academic discovery and creativity.</p>
+            <a class="btn btn-primary btp-pip" href="dashboard.html">Create Your Portfolio</a>
+        </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- other services button -->
+      <center><div class="otherservices"><h4>Other Services</h4></div></center>
+      <!-- style -->
+      <style>
+        .otherservices {
+          text-align: center;
+          margin-top: 30px;
+          margin-bottom: -30px;
+          background-color: #09a9e8;
+          border: 2px solid #ffffff;
+          padding: 15px 20px;
+          border-radius: 5px;
+          color: #fff;
+          width: 50%;
+        }
+      </style>
+      <section class="service">
+        <div class="container">
+            <div class="card card-1 service-card">
+                <div class="card-image">
+                    <img src="https://bit.ly/37hmX9N" alt="Service Image 1">
+                </div>
+                <div class="card-text">
+                    <h2 class="card-text__title">Web Development</h2>
+                    <p class="card-text__subs">Craft stunning websites and applications that leave a lasting impression. Explore the world of coding and design.</p>
+                    <a class="card-text__btn btn btn-primary" href="#">Learn More</a>
+                </div>
+            </div>
+            <div class="card card-2 service-card">
+                <div class="card-image">
+                    <img src="https://bit.ly/2Xx6MAH" alt="Service Image 2">
+                </div>
+                <div class="card-text">
+                    <h2 class="card-text__title">Digital Marketing</h2>
+                    <p class="card-text__subs">Harness the power of online marketing strategies to boost your online presence and reach your target audience.</p>
+                    <a class="card-text__btn btn btn-primary" href="#">Learn More</a>
+                </div>
+            </div>
+            <div class="card card-3 service-card">
+                <div class="card-image">
+                    <img src="https://bit.ly/2O0Ftf9" alt="Service Image 3">
+                </div>
+                <div class="card-text">
+                    <h2 class="card-text__title">Graphic Design</h2>
+                    <p class="card-text__subs">Bring your creative ideas to life through captivating visual designs. Let your imagination flow through images and art.</p>
+                    <a class="card-text__btn btn btn-primary" href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>    
+    
+      <section class="contact">
+        <div class="container">
+          <div class="contact-image">
+            <img src="https://bit.ly/32Y3o34" alt="Images">
+          </div>
+          <div class="contact-form">
+            <h2 class="contact-title">Contact Us Now.</h2>
+            <form class="form">
+              <div class="form-group group-1">
+                <input type="text" name="name" class="form-input" placeholder="Input Your Name">
+              </div>
+              <div class="form-group group-2">
+                <input type="text" name="email" class="form-input" placeholder="Input Your Email">
+              </div>
+              <div class="form-group group-3">
+                <textarea name="message" rows="5" class="form-textarea" placeholder="Input Your Messages"></textarea>
+              </div>
+              <div class="form-group group-4">
+                <input type="submit" class="form-submit btn btn-primary" value="Submit">
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-menu">
+          <ul class="footer-menu__item">
+            <li><a href="#" class="footer-menu__link">Home</a></li>
+            <li><a href="#" class="footer-menu__link">About</a></li>
+            <li><a href="#" class="footer-menu__link">Service</a></li>
+            <li><a href="#" class="footer-menu__link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-copy">
+          <p>&copy; Copyright 2023 LexArtium - All Right Reserved</p>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
